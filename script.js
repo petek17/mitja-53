@@ -58,7 +58,7 @@ function intro(){
 function introEnd(){
  const action=document.getElementById('introAction');
  if(innerWidth<760){
-  action.innerHTML=`<div class="notice"><b>MOBILNA INICIALIZACIJA USPEŠNA</b><br><br>Za optimalno izvedbo protokola nadaljuj na računalniku. Kopiraj pripravljeno sporočilo in ga odpri v Microsoft Teams na računalniku.</div><br><button class="btn" id="teamsBtn">📋 KOPIRAJ ZA TEAMS</button><div class="status" id="copyStatus"></div>`;
+  action.innerHTML=`<div class="notice"><b>MOBILNA FAZA ZAKLJUČENA</b><br><br>Za naslednjo fazo je potreben večji zaslon.<br>Kopiraj povezavo in si jo pošlji v Teams.<br>Nato odpri sporočilo na računalniku in nadaljuj protokol.</div><br><button class="btn" id="teamsBtn">📋 KOPIRAJ IN POŠLJI V TEAMS</button><div class="status" id="copyStatus"></div>`;
   document.getElementById('teamsBtn').onclick=copyTeams;
  }else{
   action.innerHTML=`<div class="notice">Računalniški terminal zaznan. Inicializacija lahko nadaljuje.</div><br><button class="btn" id="startBtn">▶ ZAŽENI PROTOKOL</button>`;
